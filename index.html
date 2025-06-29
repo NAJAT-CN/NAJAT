@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NAJAT | Artist Management</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="assets/najat-logo.png" alt="NAJAT Logo" class="logo">
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#register">Register</a>
+            <a href="#admin">Admin Login</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="section">
+            <h1>Welcome to NAJAT</h1>
+            <p>
+                NAJAT is a pioneering artist management agency, dedicated to bridging the gap between global talent and the vibrant entertainment market in China. We believe in the power of art to transcend boundaries and are committed to creating unique opportunities for artists to shine on the global stage.
+            </p>
+            <p>
+                Our team provides full support—from facilitating visa procedures and securing rewarding contracts to assisting with cultural integration. We work with transparency, trust, and deep respect for art, ensuring your focus stays on what you love: delivering unforgettable performances.
+            </p>
+        </section>
+
+        <section id="register" class="section">
+            <h2>Artist Registration</h2>
+            <form id="artistForm">
+                <input type="text" placeholder="Full Name" required><br>
+                <input type="email" placeholder="Email" required><br>
+                <input type="file" accept="image/*" required><br>
+                <input type="file" accept="video/*"><br>
+                <textarea placeholder="Tell us about yourself" required></textarea><br>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+
+        <section id="admin" class="section">
+            <h2>Admin Login</h2>
+            <form id="adminLoginForm">
+                <input type="password" id="adminPassword" placeholder="Enter password" required>
+                <button type="submit">Login</button>
+            </form>
+            <div id="adminPanel" class="hidden">
+                <h3>Artist Submissions</h3>
+                <div id="submissionsContainer"></div>
+            </div>
+        </section>
+
+        <section id="contact" class="section">
+            <h2>Contact Us</h2>
+            <p>Email: contact@najat.agency</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 NAJAT Artist Management. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
